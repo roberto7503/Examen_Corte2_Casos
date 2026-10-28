@@ -68,7 +68,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.examen2caso1/com.example.examen2caso1.ReservaApplication</mainClass>
+                            <mainClass>com.example.examen2caso1.ReservaApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
