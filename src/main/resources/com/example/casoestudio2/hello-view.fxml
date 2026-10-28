@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="16.0" prefWidth="420.0" prefHeight="260.0"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.casoestudio2.PedidosController">
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+    </padding>
+
+    <Label text="Simulador de Procesamiento de Pedidos">
+        <font>
+            <Font name="System Bold" size="16.0"/>
+        </font>
+    </Label>
+
+    <ProgressBar fx:id="pbProgreso" prefWidth="360.0" progress="0.0"/>
+
+    <HBox alignment="CENTER" spacing="24.0">
+        <HBox spacing="6.0" alignment="CENTER">
+            <Label text="Progreso:" style="-fx-font-weight: bold;"/>
+            <Label fx:id="lblContador" text="0 / 30"/>
+        </HBox>
+        <HBox spacing="6.0" alignment="CENTER">
+            <Label text="Estado:" style="-fx-font-weight: bold;"/>
+            <Label fx:id="lblEstado" text="Listo" style="-fx-text-fill: #1a73e8;"/>
+        </HBox>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="14.0">
+        <Button fx:id="btnIniciar" text="Iniciar" onAction="#handleIniciar" prefWidth="100.0"/>
+        <Button fx:id="btnCancelar" text="Cancelar" onAction="#handleCancelar" prefWidth="100.0"/>
+    </HBox>
+</VBox>
