@@ -1,0 +1,54 @@
+.root-pane {
+    -fx-background-color: #f4f7fb;
+    -fx-font-family: "Segoe UI";
+}
+
+.header {
+    -fx-background-color: #155eef;
+}
+
+.title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #dbe8ff;
+}
+
+.counter-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-border-color: #d8e1ef;
+    -fx-border-radius: 12px;
+    -fx-padding: 22px;
+    -fx-pref-width: 180px;
+    -fx-effect: dropshadow(gaussian, rgba(21, 94, 239, 0.08), 12, 0, 0, 4);
+}
+
+.counter-value {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #172b4d;
+}
+
+.counter-name, .status {
+    -fx-font-size: 14px;
+    -fx-text-fill: #506176;
+}
+
+.primary-button {
+    -fx-background-color: #155eef;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 24px;
+    -fx-text-fill: white;
+}
+
+.primary-button:hover {
+    -fx-background-color: #0b4fd4;
+}

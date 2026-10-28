@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.examen2caso1.controller.ReservaController"
+            styleClass="root-pane">
+    <top>
+        <VBox spacing="6.0" styleClass="header">
+            <padding>
+                <Insets bottom="22.0" left="28.0" right="28.0" top="28.0"/>
+            </padding>
+            <Label text="Reserva de entradas" styleClass="title"/>
+            <Label text="Tres agentes · 20 entradas · 30 solicitudes" styleClass="subtitle"/>
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="28.0">
+            <padding>
+                <Insets bottom="28.0" left="28.0" right="28.0" top="28.0"/>
+            </padding>
+            <HBox alignment="CENTER" spacing="18.0">
+                <VBox alignment="CENTER" spacing="8.0" styleClass="counter-card">
+                    <Label fx:id="entradasDisponiblesLabel" styleClass="counter-value"/>
+                    <Label text="Disponibles" styleClass="counter-name"/>
+                </VBox>
+                <VBox alignment="CENTER" spacing="8.0" styleClass="counter-card">
+                    <Label fx:id="reservasConfirmadasLabel" styleClass="counter-value"/>
+                    <Label text="Confirmadas" styleClass="counter-name"/>
+                </VBox>
+                <VBox alignment="CENTER" spacing="8.0" styleClass="counter-card">
+                    <Label fx:id="solicitudesRechazadasLabel" styleClass="counter-value"/>
+                    <Label text="Rechazadas" styleClass="counter-name"/>
+                </VBox>
+            </HBox>
+            <ProgressIndicator fx:id="progresoIndicator" prefHeight="42.0" prefWidth="42.0"/>
+            <Label fx:id="estadoLabel" styleClass="status"/>
+            <Button fx:id="iniciarButton" text="Iniciar simulacion"
+                    onAction="#onIniciarSimulacion" styleClass="primary-button"/>
+        </VBox>
+    </center>
+</BorderPane>
